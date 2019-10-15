@@ -81,7 +81,7 @@ class App extends Component {
   };
   render() {
     const { cards, guesses, matchedCardIndices, hallOfFame } = this.state;
-    const won = matchedCardIndices.length === 2;
+    const won = matchedCardIndices.length === 36;
     return (
       <div className="memory">
         <GuessCount guesses={guesses} />
